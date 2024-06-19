@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">UAJY Course</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Mahasiswa Informatika</h3>
+         <p class="role">Hacker Tzy</p>
+         <a href="profile.html" class="btn">Lihat Profil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Masuk</a>
+            <a href="register.html" class="option-btn">Daftar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Mahasiswa Informatika</h3>
+      <p class="role">Hacker Tzy</p>
+      <a href="profile.html" class="btn">Lihat Profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-index"></i><span>Beranda</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Tentang</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Course</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Pelatih</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Kontak</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <!-- <video src="images/post-0-1.png" controls poster="images/post-1-1.png" id="video"></video> -->
+      </div>
+      <h3 class="title">Dasar Pemrograman C (Bagian 05)</h3>
+      <h class="title">Perulangan (Bagian 01)</h>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>19-06-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>120k Suka</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/uajy.png" alt="">
+         <div>
+            <h3>Daspro</h3>
+            <span>UAJY</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">Lihat Daftar Simpan</a>
+         <button><i class="far fa-heart"></i><span>Suka</span></button>
+      </form>
+      <div class="description">
+         <h1 class="title">Penjelasan</h1>
+         <p class="description-text">
+            Perulangan atau umumnya disebut dengan Loop, adalah sebuah teknik yang memungkinkan program untuk menjalankan serangkaian perintah secara berulang sampai suatu kondisi tertentu telah berhasil dicapai. Hal ini memungkinkan kita untuk menulis kode program yang lebih efisien dan lebih mudah dibaca karena tidak ada penulisan perintah-perintah yang sama berulang kali.
+            <img src="images/gb1.png" alt="">
+            <p class="description-text">‎ </p>
+            <img src="images/gb2.png" alt="">
+            Berdasarkan contoh diatas, dapat dilihat bahwa, Ketika kita ingin mencetak tulisan “Hello World” sebanyak 5 kali, akan lebih efisien jika kita menggunakan perulangan untuk mencetaknya dibandingkan dengan menulis ulang kode yang sama sebanyak 5 kali.
+         </p>
+
+         <p class="description-text">‎ </p>
+
+         <h1 class="title">Kelompok Perulangan</h1>
+         <p class="description-text">
+            1. Counted Loop (Perulangan Terhitung)
+            <img src="" alt="">
+            Perulangan yang sudah pasti dan sudah ditentukan sebelumnya berapa jumlah perulangan yang akan dijalankan oleh program.
+            <p class="description-text">‎ </p>
+            2.	Uncounted Loop (Perulangan Tidak Terhitung)
+            <img src="" alt="">
+            Perulangan yang akan terus berulang sampai kondisi tertentu terpenuhi sehingga tidak diketahui pasti seberapa banyak perulangan yang akan dijalankan program dari awal.
+         </p> 
+
+         <p class="description-text">‎ </p>
+
+         <h1 class="title">Struktur Perulangan</h1>
+         <p class="description-text">
+            Secara umum, ada dua bagian struktur perulangan, yaitu:
+            <img src="" alt="">
+            1.	Kondisi Perulangan: Ekspresi boolean yang harus dipenuhi untuk melaksanakan perulangan.
+            <img src="" alt="">
+            2.	Badan Perulangan: Bagian algoritma yang diulang.
+            <img src="" alt="">
+            <p class="description-text">‎ </p>
+            Struktur Perulangan disertai juga:
+            <img src="" alt="">
+            1.	Inisialisasi: Penentuan awal variabel control.
+            <img src="" alt="">
+            2.	Terminasi: Aksi yang dilakukan setelah perulangan selesai dilaksanakan.
+            <p class="description-text">‎ </p>
+            <img src="images/gb3.png" alt="">
+            Struktur Perulangan Secara Umum
+         </p>
+
+         <p class="description-text">‎ </p>
+
+         <h1 class="title">Jenis-jenis Perulangan</h1>
+         <p class="description-text">
+            1.	For Loop (Counted Loop)
+            <img src="" alt="">
+            Perulangan “For” merupakan perulangan yang termasuk dalam counted loop, hal ini karena jumlah perulangan yang akan dijalankan program sudah ditentukan dari awal.
+            <p class="description-text">‎ </p>
+            <img src="images/gb4.png" alt="">
+            Struktur For Loop
+            <p class="description-text">‎ </p>
+            <img src="images/gb5.png" alt="">
+            Contoh Penggunaan For Loop
+            <p class="description-text">‎ </p>
+            <img src="images/gb6.png" alt="">
+            Output dari contoh penggunaan For Loop
+            <p class="description-text">‎ </p>
+
+            2.	While Loop (Uncounted Loop)
+            <img src="" alt="">
+            Perulangan “While” termasuk ke dalam uncounted loop. Hal ini karena belum diketahui berapa kali program akan menjalankan perulangan. Pada perulangan while, nilai inisialisasi / variabel kontrol akan dicek terlebih dahulu. Jika variabel kontrol tidak memenuhi kondisi (False), maka program akan langsung keluar dari loop tersebut. Dengan kata lain, selama variabel kontrol memenuhi kondisi (True), perulangan akan terus menerus dijalankan oleh program.
+            <p class="description-text">‎ </p>
+            <img src="images/gb7.png" alt="">
+            Struktur While Loop
+            <p class="description-text">‎ </p>
+            <img src="images/gb8.png" alt="">
+            Contoh Penggunaan While Loop
+            <p class="description-text">‎ </p>
+            <img src="images/gb9.png" alt="">
+            Output dari contoh penggunaan While Loop
+            
+            <p class="description-text">‎ </p>
+            3.	Do-While Loop (Uncounted Loop)
+            <img src="" alt="">
+            Sama halnya dengan perulangan while, perulangan “Do While” juga termasuk dalam uncounted loop untuk alasan yang sama. Jumlah perulangan yang akan dijalankan oleh program sama sekali tidak diketahui dari awal. Perulangan do while akan menjalankan statement terlebih dahulu lalu mengecek kondisi di setiap akhir perulangan. Jika kondisi tidak terpenuhi (False), maka program akan keluar dari loop tetapi jika kondisi terpenuhi (True) maka program akan terus menjalankan perulangan. Perlu diingat bahwa apapun hasil pengecekan kondisi pada do while loop, program akan tetap menjalankan statement/code minimal 1 kali!
+            <p class="description-text">‎ </p>
+            <img src="images/gb10.png" alt="">
+            Struktur Do-While Loop
+            <p class="description-text">‎ </p>
+            <img src="images/gb11.png" alt="">
+            Contoh Penggunaan Do-While Loop
+            <p class="description-text">‎ </p>
+            <img src="images/gb12.png" alt="">
+            Output dari contoh penggunaan Do-While Loop
+         </p>
+
+         <a href="watch-video-6.html" class="btn">Perulangan (Bagian 02)</a>
+      </div>
+   </div>
+   
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 Komentar</h1>
+
+   <form action="" class="add-comment">
+      <h3>Tambah Kommentar</h3>
+      <textarea name="comment_box" placeholder="Masukkan komentar" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="Tambah Komentar" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">Komentar Pengguna</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>Mahasiswa Informatika</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Terimakasih</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="Sunting Komentar" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="Hapus Komentar" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Kelvin deodorant</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Bagus Banget!!!
+            Keren</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Verdi Tokyo Mokyo</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">WOW membantu sekali
+            Mudah dipahami juga
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Alfredo Pangsit</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">makasih tutorial nya</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Kelvin Majapahit</h3>
+               <span>22-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">kesini terus gara gara gapaham materi, hehe</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Verdi Hime</h3>
+               <span>23-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Gampang dipahami sampe ketagihan baca
+
+            bagaimana kalian bisa seperti ini?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>Hot Malau</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>

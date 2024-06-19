@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">UAJY Course</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Mahasiswa Informatika</h3>
+         <p class="role">Hacker Tzy</p>
+         <a href="profile.html" class="btn">Lihat Profil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Masuk</a>
+            <a href="register.html" class="option-btn">Daftar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Mahasiswa Informatika</h3>
+      <p class="role">Hacker Tzy</p>
+      <a href="profile.html" class="btn">Lihat Profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-index"></i><span>Beranda</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Tentang</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Course</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Pelatih</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Kontak</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <!-- <video src="images/post-0-1.png" controls poster="images/post-1-1.png" id="video"></video> -->
+      </div>
+      <h3 class="title">Dasar Pemrograman C (Bagian 01)</h3>
+      <h class="title">Flowchart (Bagian 01)</h>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>19-06-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>120k Suka</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/uajy.png" alt="">
+         <div>
+            <h3>Daspro</h3>
+            <span>UAJY</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">Lihat Daftar Simpan</a>
+         <button><i class="far fa-heart"></i><span>Suka</span></button>
+      </form>
+      <div class="description">
+         <h1 class="title">Apa itu Flowchart?</h1>
+         <p class="description-text">
+            FlowChart sendiri merupakan suatu Diagram yang menggambarkan langkah-langkah dan juga solusi
+            (keputusan) yang dilakukan di dalam sebuah program. Flowchart biasanya disajikan dalam bentuk
+            simbol-simbol grafis yang dimana setiap simbolnya ditunjuk dengan panah yang menandakan alir dari
+            flowchart tersebut.
+         </p>
+
+         <p class="description-text">‎ </p>
+
+         <h1 class="title">Fungsi Flowchart</h1>
+         <p class="description-text">
+            Untuk membuat suatu algoritma menjadi semakin mudah untuk dipahami oleh banyak orang, dan juga membuat sebuah program menjadi lebih sederhana berdasarkan gambaran dari alir jalannya sebuah program yang disajikan dengan simbol-simbol grafis.
+         </p>
+         
+         <p class="description-text">‎ </p>
+         
+         <h1 class="title">Tabel Simbol Flowchart</h1>
+         <p class="description-text">
+            <img src="images/tabel-1.png" alt="">
+         </p>
+
+         <p class="description-text">‎ </p>
+         
+         <h1 class="title">ToolBar pada Flowchart</h1>
+         <p class="description-text">
+            Berikut fungsi ToolBar yang ada di flowchart.
+         </p>
+         <p class="description-text">
+            <img src="images/tabel-toolbar.png" alt="">
+         </p>
+         
+         <p class="description-text">‎ </p>
+         
+         <h1 class="title">Operator yang digunakan dalam flowchart</h1>
+         <p class="description-text">
+            <img src="images/tabel3.png" alt="">
+            <img src="images/tabel4.png" alt="">
+         </p>
+
+         <p class="description-text">‎ </p>
+
+         <h1 class="title">Note*</h1>
+         <p class="description-text">
+            Penggunaan AND atau OR bisa dipakai jika terdapat dua atau lebih kondisi, secara sederhana AND mengharuskan seluruh kondisi terpenuhi agar berjalan ke “Yes” dan OR akan berjalan ke “Yes” jika ada minimal satu saja kondisi yang terpenuhi. Jika terdapat 3 atau lebih kondisi yang saling berhubung kita bisa menggunakan kedua operator AND dan OR (menggunakan tanda kurung). Seperti contoh:
+            <img src="images/tabel5.png" alt="">
+            <p class="description-text">‎ </p>
+            *Dalam kondisi ini program akan berjalan ke “Yes” jika salah satu kondisi terpenuhi yaitu kondisi (tipe merupakan mobil dan jumlah lebih dari 5 (Kedua syarat ini harus terpenuhi !)) atau (tipe merupakan motor dan jumlah lebih dari 10 (Kedua syarat ini harus terpenuhi !)).
+         </p>
+
+         <p class="description-text">‎ </p>
+
+         <h1 class="title">Penggunaan RAPTOR</h1>
+         <p class="description-text">
+            •	Memasukkan Symbols
+            <img src="images/tabel6.png" alt="">
+            <p class="description-text">‎ </p>
+            •	Input
+            <img src="images/tabel7.png" alt="">
+            <p class="description-text">‎ </p>
+            •	Asiggnment
+            <img src="images/tabel8.png" alt="">
+            <p class="description-text">‎ </p>
+            •	Output
+            <img src="images/tabel9.png" alt="">
+            <p class="description-text">‎ </p>
+            •	Pemilihan/Selection
+            <img src="images/tabel10.png" alt="">
+            <p class="description-text">‎ </p>
+            •	Operasi Modulus
+            <img src="images/tabel11.png" alt="200">
+            <p class="description-text">‎ </p>
+         </p>
+         <a href="watch-video-2.html" class="btn">Flowchart (Bagian 02)</a>
+      </div>
+   </div>
+   
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 Komentar</h1>
+
+   <form action="" class="add-comment">
+      <h3>Tambah Kommentar</h3>
+      <textarea name="comment_box" placeholder="Masukkan komentar" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="Tambah Komentar" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">Komentar Pengguna</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>Mahasiswa Informatika</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Terimakasih</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="Sunting Komentar" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="Hapus Komentar" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Kelvin deodorant</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Bagus Banget!!!
+            Keren</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Verdi Tokyo Mokyo</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">WOW membantu sekali
+            Mudah dipahami juga
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Alfredo Pangsit</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">makasih tutorial nya</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Kelvin Majapahit</h3>
+               <span>22-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">kesini terus gara gara gapaham materi, hehe</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Verdi Hime</h3>
+               <span>23-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Gampang dipahami sampe ketagihan baca
+
+            bagaimana kalian bisa seperti ini?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>Hot Malau</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>

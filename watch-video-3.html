@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">UAJY Course</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Mahasiswa Informatika</h3>
+         <p class="role">Hacker Tzy</p>
+         <a href="profile.html" class="btn">Lihat Profil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Masuk</a>
+            <a href="register.html" class="option-btn">Daftar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Mahasiswa Informatika</h3>
+      <p class="role">Hacker Tzy</p>
+      <a href="profile.html" class="btn">Lihat Profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-index"></i><span>Beranda</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Tentang</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Course</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Pelatih</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Kontak</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <!-- <video src="images/post-0-1.png" controls poster="images/post-1-1.png" id="video"></video> -->
+      </div>
+      <h3 class="title">Dasar Pemrograman C (Bagian 03)</h3>
+      <h class="title">Tipe Data, Penamaan dan Sekuens</h>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>19-06-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>120k Suka</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/uajy.png" alt="">
+         <div>
+            <h3>Daspro</h3>
+            <span>UAJY</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">Lihat Daftar Simpan</a>
+         <button><i class="far fa-heart"></i><span>Suka</span></button>
+      </form>
+      <div class="description">
+         <h1 class="title">Definisi</h1>
+         <p class="description-text">
+            Dalam pemrograman komputer, manipulasi data adalah inti dari operasi program. Data yang ada di dalam memori diklasifikasikan berdasarkan jenisnya, yang disebut sebagai tipe data. Klasifikasi ini penting agar compiler dapat memahami bagaimana data tersebut akan digunakan dan memori yang dibutuhkan. Tipe data secara umum dibagi menjadi dua kategori utama: Tipe Data Primitif dan Tipe Data Bentukan.
+         </p>
+
+         <p class="description-text">‎ </p>
+
+         <p class="description-text">
+            •	Tipe Data Primitif
+            <p class="description-text">
+                Tipe data ini merupakan tipe data dasar yang paling umum dan disediakan secara langsung dalam bahasa pemrograman yang digunakan. Berikut tipe data primitif yang tersedia di Bahasa pemrograman C.
+            </p>
+            <img src="images/tabel1.0.png" alt="">
+            <p class="description-text">‎ </p>
+            •>	Integer
+            <p class="description-text">
+                Tipe data yang berisi bilangan bulat. Pemanggilan pada bahasa C menggunakan %d. Contoh: -1, 0, 100.
+                Terdapat pula tipe data integer yang dapat menyimpan lebih banyak maupun lebih sedikit dari integer, yaitu:
+                <img src="images/tabel2.0.png" alt="">
+                Tulisan "unsigned" berarti bilangan bulat tanpa tanda positif atau negatif, sehingga hanya dapat menampung bilangan bulat positif mulai dari 0. "Long" digunakan untuk menambah batas maksimal penyimpanan data integer yang awalnya hanya -2,147,483,648 s.d 2,147,483,647 menjadi range yang tersedia di tabel tersebut, sedangkan "short" digunakan untuk mengurangi batas/range dari integer.
+            </p>
+            •>	Float
+            <p class="description-text">
+                Tipe data yang berisi bilangan desimal. Pemanggilan pada bahasa C menggunakan %f. Contoh: -0.1, 0.003
+                Terdapat juga tipe data integer yang dapat menyimpan lebih banyak maupun lebih sedikit dari float, yaitu:
+                <img src="images/tabel3.0.png" alt="">
+                Tipe data float dan double digunakan untuk menyimpan bilangan real. Float menampung hingga 7 digit desimal, sedangkan double menampung hingga 16 digit desimal. Perbedaan kedua ini dapat sangat berpengaruh memilih tipe data yang tepat sangat penting untuk menghindari kesalahan hasil dalam program.
+            </p>
+            •>	Character
+            <p class="description-text">
+                Tipe data yang hanya menyimpan 1 huruf atau 1 karakter. Pemanggilan pada bahasa C menggunakan %c. Contoh: ‘a’, ‘@’
+                Terdapat juga tipe data integer yang dapat menyimpan lebih banyak maupun lebih sedikit dari character, yaitu:
+                <img src="images/tabel4.0.png" alt="">
+                Signed char dapat diartikan juga sebagai char, dikarenakan range data yang masih sama sehingga tidak harus dituliskan signed secara default untuk menggunakan char.
+            </p>
+            •>	Boolean
+            <p class="description-text">
+                Tipe data yang memiliki 2 nilai, yaitu True atau False. Tipe data ini juga merupakan tipe data tambahan dari library <stdbool.h> perlu menginclude library tersebut untuk menggunakan Boolean.
+                <img src="images/tabel5.0.png" alt="">
+                <img src="images/tabel6.0.png" alt="">
+            </p>
+            <p class="description-text">‎ </p>
+            <p class="description-text">
+                •	Tipe Data Bentukan
+                <p class="description-text">
+                    Tipe Data Bentukan adalah tipe data yang didefinisikan atau dibuat sendiri oleh programmer dan merupakan turunan dari Tipe Data Primitif atau lainnya. Salah satu yang sering digunakan adalah String, seperti typedef char string[50]; yang berfungsi menggabungkan karakter char sebanyak 50, biasanya untuk menginput data seperti nama.
+                </p>
+                <p class="description-text">‎ </p>
+                •>	Variabel
+                <p class="description-text">
+                    Tipe Data adalah jenis nilai, sedangkan Variabel adalah tempat penyimpanannya (nilai). Variabel menampung data yanf ditentukan oleh tipe data dan memerlukan deklarasi, yaitu proses pembuatan dengan mengetik tipe data diikuti nama variabel yang diinginkan. Beberapa variabel dengan tipe data yang sama dapat dideklarasikan sekaligus.
+                    <img src="images/tabel7.0.png" alt="">
+                    Aturan penulisan nama Variabel:
+                    <img src="" alt="">
+                    •	Harus dimulai dengan huruf alfabet, tidak boleh dimulai dengan angka, spasi, atau karakter khusus lainnya.
+                    <img src="" alt="">
+                    •	Case sensitif (huruf kapital/kecil mempengaruhi)
+                    <img src="" alt="">
+                    •	Karakter penyusun nama hanya boleh: alfabet, angka, dan “_” (underscore)
+                    <img src="" alt="">
+                    •	Nama variable tidak boleh pakai nama yang udah ada di pemrograman C
+                    <img src="" alt="">
+                    •	Tidak boleh dipisahkan dengan spasi
+                    <img src="" alt="">
+                    •	Panjang variabel tidak terbatas
+                    <img src="" alt="">
+                    •	Semua variabel yang dipakai harus dideklarasikan terlebih dahulu.
+                    <img src="" alt="">
+                    •	Setiap akhir code wajib diberikan titik koma (;) agar tidak error.
+                </p>
+                <p class="description-text">‎ </p>
+                •>	Assignment, Inisialisasi, dan Input
+                <p class="description-text">
+                  Setelah variabel dideklarasikan, kita dapat melakukan inisialisasi, assignment, dan operasi pada variabel tersebut. Assignment adalah pemberian nilai pada suatu variabel. Deklarasi yang disertai assignment proses tersebut disebut inisialisasi.
+                  <img src="images/tabel8.0.png" alt="">
+               </p>
+               <p class="description-text">‎ </p>
+                •>	Ekspresi Aritmatika, dan Ekspresi Relasional
+                <p class="description-text">
+                  Dalam bahasa pemrograman C, ada dua jenis operasi: ekspresi aritmatika yang mengombinasikan variabel, konstanta, dan operator matematika untuk menghasilkan nilai numerik, serta ekspresi relasional digunakan untuk  membandingkan dua nilai dan menghasilkan nilai logika (benar atau salah).
+                  <img src="" alt="">
+                  Contoh ekspresi aritmatika:
+                  <img src="" alt="">
+                  1.	a = a + b;
+                  <img src="" alt="">
+                  2.	Jari_jari = 3.14 * r * r;
+                  <img src="" alt="">
+                  3.	tanggal5 = getTanggal(tanggal) * 5;
+                  <img src="" alt="">
+                  <img src="" alt="">
+                  Contoh ekspresi Relasional:
+                  <img src="" alt="">
+                  1.	npm == 230712436; (Jika npm sama, maka nilai true (1), selain itu akan false (0)),
+                  <img src="" alt="">
+                  2.	tahun < 2024; (Jika tahun dibawah 2024, maka nilai true (1), selain itu akan false (0)),
+                  <img src="" alt="">
+                  3.	angka % 2 == 0; (Jika angka habis dibagi 2, maka nilai true (1), selain itu akan false (0)),
+               </p>
+               <p class="description-text">‎ </p>
+
+               <p class="description-text">
+                  •	Sekuens
+                  <p class="description-text">
+                     Algoritma adalah sekumpulan instruksi yang dijalankan secara berurutan (sekuensial). Secara umum aturan sekuens algoritma adalah sebagai berikut:
+                     <img src="" alt="">
+                     1.	Tiap instruksi dilaksanakan satu persatu dan biasanya tiap instruksi dibaca dari atas kebawah dan dari kiri ke kanan,
+                     <img src="" alt="">
+                     2.	Tiap instruksi dilaksanakan satu kali,
+                     <img src="" alt="">
+                     3.	Urutan instruksi yang dilaksanakan pemroses sama dengan urutan aksi sebagaimana tertulis dalam algoritma yang ada, dan
+                     <img src="" alt="">
+                     4.	Akhir dari instruksi terakhir merupakan akhir algoritma.
+                     <p class="description-text">‎ </p>
+                     <img src="images/tabel9.0.png" alt="">
+                     Nilai angka1 akan menjadi 6 di saat terjadi operasi aritmatika, dan menampilkan 6, lalu angka2 akan bernilai 4 dikarenakan operasi tersebut terjadi setelah operasi penambahan pertama terjadi, dan akan menampilkan 4 untuk angka2.
+                     
+                  </p>
+               </p>
+         </p>
+         <a href="watch-video-4.html" class="btn">Pemilihan</a>
+      </div>
+   </div>
+   
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 Komentar</h1>
+
+   <form action="" class="add-comment">
+      <h3>Tambah Kommentar</h3>
+      <textarea name="comment_box" placeholder="Masukkan komentar" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="Tambah Komentar" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">Komentar Pengguna</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>Mahasiswa Informatika</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Terimakasih</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="Sunting Komentar" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="Hapus Komentar" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Kelvin deodorant</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Bagus Banget!!!
+            Keren</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Verdi Tokyo Mokyo</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">WOW membantu sekali
+            Mudah dipahami juga
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Alfredo Pangsit</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">makasih tutorial nya</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Kelvin Majapahit</h3>
+               <span>22-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">kesini terus gara gara gapaham materi, hehe</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Verdi Hime</h3>
+               <span>23-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Gampang dipahami sampe ketagihan baca
+
+            bagaimana kalian bisa seperti ini?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>Hot Malau</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>

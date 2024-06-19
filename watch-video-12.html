@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">UAJY Course</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Mahasiswa Informatika</h3>
+         <p class="role">Hacker Tzy</p>
+         <a href="profile.html" class="btn">Lihat Profil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Masuk</a>
+            <a href="register.html" class="option-btn">Daftar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Mahasiswa Informatika</h3>
+      <p class="role">Hacker Tzy</p>
+      <a href="profile.html" class="btn">Lihat Profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-index"></i><span>Beranda</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Tentang</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Course</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Pelatih</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Kontak</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <!-- <video src="images/post-0-1.png" controls poster="images/post-1-1.png" id="video"></video> -->
+      </div>
+      <h3 class="title">Dasar Pemrograman C (Bagian 12)</h3>
+      <h class="title">Array of Record</h>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>19-06-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>120k Suka</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/uajy.png" alt="">
+         <div>
+            <h3>Daspro</h3>
+            <span>UAJY</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">Lihat Daftar Simpan</a>
+         <button><i class="far fa-heart"></i><span>Suka</span></button>
+      </form>
+      <div class="description">
+         <h1 class="title">Pengertian</h1>
+         <p class="description-text">
+            Array adalah sekumpulan variabel dengan tipe data yang sama dan disimpan secara berurutan, diakses dengan menggunakan index yang merupakan angka pengarah posisi data yang disimpan. Sedangkan Record merupakan sebuah tipe data bentukan yang menyimpan Kumpulan atribut/data yang sama maupun berbeda-beda. Secara singkat AoR dapat dipahami sebagai sekumpulan variabel dengan tipe data bentukan yang disimpan secara berurutan.
+            <p class="description-text">‎ </p>
+            <h1 class="title">Penggunaan Array of Record</h1>
+            a) Deklarasi
+            <img src="" alt="">
+            Pada pendeklarasian dilakukan sama seperti sebelumnya dengan struktur:
+            <img src="" alt="">
+            TipeData namaVariabel[isiArray];
+            <p class="description-text">‎ </p>
+            <img src="images/aor1.png" alt="">
+            Dengan cara yang sama ini kita dapat menggunakan tipe data bentukan untuk mendeklarasikan banyak Mahasiswa seperti gambar di atas.
+            <p class="description-text">‎ </p>
+            b)	Mengakses Index Pada Array of Record
+            <img src="" alt="">
+            Terdapat sedikit perbedaan dalam mengakses AoR, karena terdapat tambahan field yang akan diakses, seperti mengakses field dalam record yang menggunakan tanda titik (.). Struktur dalam mengakses index ini adalah:
+            <img src="" alt="">
+            namaVariabel[index].field;
+            <p class="description-text">‎ </p>
+            <img src="images/aor2.png" alt="">
+            Pada gambar di atas setelah pemanggilan variabel array kurung siku yang berisi index digunakan, diikuti oleh tanda titik (.) yang akan menampilkan secara otomatis akses kepada field yang tersedia.
+            <p class="description-text">‎ </p>
+            <img src="images/aor3.png" alt="">
+            <img src="images/aor4.png" alt="">
+            Gambar di atas ini merupakan hasil dari contoh cara dalam mengakses field pada AoR yang dapat di lihat pada gambar sebelumnya.
+            <img src="" alt="">
+            Jadi pada code yang ada di atas diawali dengan deklarasi struct Mahasiswa dengan field string nama, int NPM, dan float IPK, dilanjutkan dengan  deklarasi AoR mahasiswa[100] , lalu dilanjutkan lagi dengan deklarasi int i dengan nilai 0, variabel ini akan menjadi penunjuk index dari mahasiswa yang akan diakses dan di-increment agar dapat diakses variable pada index berikutnya.
+            <p class="description-text">‎ </p>
+            c)	Pengisian dan Pengubahan Data
+            <img src="" alt="">
+            Dalam hal mengisi atau mengubah nilai yang ada pada AoR strukturnya adalah:
+            <img src="" alt="">
+            <p class="description-text">‎ </p>
+            namaVariabel[index].field = nilaiBaru;
+            <img src="" alt="">
+            atau
+            <img src="" alt="">
+            strcpy(namaVariabel[index].field, nilaiStringBaru);
+            <p class="description-text">‎ </p>
+            <img src="" alt="">
+            Pada bagian ini harus diperhatikan tipe data yang digunakan oleh field  yang akan diisi atau pun dirubah . Tipe data yang dimiliki field sendiri sudah kita bentuk ketika kita membuat tipe data bentukan Mahasiswa di bagian header. Berikut ini adalah potongan code yang berisi pengisian nilai pada setiap field Mahasiswa dengan mengimplementasikan Array of Record.
+            <p class="description-text">‎ </p>
+            <img src="images/aor5.png" alt="">
+            Digunakan strcpy() untuk mengisi atau merubah nilai dengan tipe data string, selain daripada itu dapat digunakan simbol sama dengan(=).
+            <p class="description-text">‎ </p>
+            d)	Penggunaan Perulangan dalam Array of Record
+            <img src="images/aor6.png" alt="">
+            Seperti pada gambar di atas perulangan dapat digunakan dalam mengubah, menampilkan atau pun mengisi nilai field dengan mudah pada AoR.
+            <p class="description-text">‎ </p>
+            <h1 class="title">Array of Record dalam Array of Record</h1>
+            Dalam kasus ini suatu Record mempunyai suatu field yang berupa AoR.
+            <p class="description-text">‎ </p>
+            1. Deklarasi
+            <img src="images/aor7.png" alt="">
+            Pada gambar diatas terpapar contoh dari Array of Record dalam Array of Record yang mana MataKuliah matkul[5] di dalam Mahasiswa. Secara singkat “Mahasiswa memiliki atribut berupa nama, NPM, IPK, dan 5 MataKuliah, di mana MataKuliah memiliki 2 atribut yaitu namaMataKuliah dan jumlahSKS.
+            Hal penting yang harus diperhatikan juga adalah struct yang akan menjadi 
+            Array of Record di dalam record lainnya harus dideklarasikan terlebih dahulu agar dapat dikenali oleh program, sedangkan AoR yang lain dapat dideklarasikan seperti biasanya.
+            <p class="description-text">‎ </p>
+            2. Pengaksesan Index
+            <img src="" alt="">
+            Dalam hal pengaksesan ini hal yang perlu diperhatikan pengaksesan array akan digunakan sebanyak array yang digunakan.
+            <p class="description-text">‎ </p>
+            <img src="images/aor8.png" alt="">
+            Lebih jelasnya sesuai pada gambar di atas yang menggunakan 2 array, maka digunakan juga 2 akses yang ada dengan cara memakai  2 buah kurung siku [ ] dan dalam pengaksesan atribut di dalam record selalu diikuti dengan tanda titik (.).
+            <p class="description-text">‎ </p>
+            3.	Pengisian dan Pengubahan Data
+            <img src="images/aor9.png" alt="">
+            Pada hal pengisian dan pengubahan data yang ada sama seperti yang sebelumnya seperti yang dapat dipahami pada contoh gambar di atas.
+            <p class="description-text">‎ </p>
+            4.	Perulangan untuk AoR dalam AoR
+            <img src="" alt="">
+            Dalam hal ini perulangan digunakan untuk mengakses index dari array yang ada, seringkali dikarenakan dalam konsep AoR dalam AoR terdapat dua array yang akan akses, maka akan digunakan nested loop dalam mengakses field dari AoR dari sebuah AoR seperti pada gambar di bawah ini.
+            <p class="description-text">‎ </p>
+            <img src="images/aor10.png" alt="">
+            <p class="description-text">‎ </p>
+            <h1 class="title">Penerapan Fungsi dan Prosedur pada AoR</h1>
+            <img src="" alt="">
+            Pada bagian ini hal yang akan dilakukan adalah membuat gabungan antara AoR, fungsi serta perulangan sehingga dapat mempermudah dalam membuat suatu code seperti yang ada pada gambar di samping dimana  kalian akan menginisialisasi (set semua nilai pada AoR menjadi kosong) dalam Array of Record.
+            <p class="description-text">‎ </p>
+         </p>
+
+         <a href="playlist.html" class="btn">Selesai</a>
+      </div>
+   </div>
+   
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 Komentar</h1>
+
+   <form action="" class="add-comment">
+      <h3>Tambah Kommentar</h3>
+      <textarea name="comment_box" placeholder="Masukkan komentar" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="Tambah Komentar" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">Komentar Pengguna</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>Mahasiswa Informatika</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Terimakasih</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="Sunting Komentar" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="Hapus Komentar" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Kelvin deodorant</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Bagus Banget!!!
+            Keren</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Verdi Tokyo Mokyo</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">WOW membantu sekali
+            Mudah dipahami juga
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Alfredo Pangsit</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">makasih tutorial nya</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Kelvin Majapahit</h3>
+               <span>22-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">kesini terus gara gara gapaham materi, hehe</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Verdi Hime</h3>
+               <span>23-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Gampang dipahami sampe ketagihan baca
+
+            bagaimana kalian bisa seperti ini?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>Hot Malau</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>

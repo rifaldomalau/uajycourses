@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>watch</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">UAJY Course</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Mahasiswa Informatika</h3>
+         <p class="role">Hacker Tzy</p>
+         <a href="profile.html" class="btn">Lihat Profil</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Masuk</a>
+            <a href="register.html" class="option-btn">Daftar</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Mahasiswa Informatika</h3>
+      <p class="role">Hacker Tzy</p>
+      <a href="profile.html" class="btn">Lihat Profil</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="index.html"><i class="fas fa-index"></i><span>Beranda</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>Tentang</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Course</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span><Pelatih>/span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Kontak</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <!-- <video src="images/post-0-1.png" controls poster="images/post-1-1.png" id="video"></video> -->
+      </div>
+      <h3 class="title">Dasar Pemrograman C (Bagian 07)</h3>
+      <h class="title">Prosedur (Bagian 01)</h>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>19-06-2024</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>120k Suka</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/uajy.png" alt="">
+         <div>
+            <h3>Daspro</h3>
+            <span>UAJY</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist.html" class="inline-btn">Lihat Daftar Simpan</a>
+         <button><i class="far fa-heart"></i><span>Suka</span></button>
+      </form>
+      <div class="description">
+         <h1 class="title">Penjelasan</h1>
+         <p class="description-text">
+            Prosedur adalah sub program yang berisi alur dan logika untuk menjalankan kode tertentu. Prosedur akan membuat progam bisa membagi tugas-tugasnya sesuai dengan keperluannya dan bisa kita panggil ke main program jika dibutuhkan. Prosedur dapat membantu menghindari pengulangan kode yang panjang dan rumit, sehingga kode lebih efisien dan mudah dibaca.
+            <p class="description-text">‎ </p>
+            <img src="images/pros1.png" alt="">
+            Contoh Penggunaan Prosedur
+            <p class="description-text">‎ </p>
+            <img src="images/pros2.png" alt="">
+            Output dari Contoh Penggunaan Prosedur
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Struktur Prosedur</h1>
+         <p class="description-text">
+            Prosedur terdiri dari 3 bagian penting, yaitu :
+            <img src="" alt="">
+            1.	Nama Prosedur: Untuk mengidentifikasi dan memanggil prosedur.
+            <img src="" alt="">
+            2.	Parameter: Untuk memberikan input yang digunakan dalam prosedur (opsional).
+            <img src="" alt="">
+            3.	Body: Isi prosedur berupa alur dan logika dari suatu code.
+            <p class="description-text">‎ </p>
+            <img src="images/pros3.png" alt="">
+            Struktur Prosedur
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Pendeklarasian, Pendefinisian, dan Pemanggilan Prosedur</h1>
+         <h1 class="title">Pendeklarasian Prosedur</h1>
+         <p class="description-text">
+            Pendeklarasian biasanya dilakukan di bagian atas program sebelum main program. Sebuah prosedur akan tetap berjalan meskipun tidak dideklarasikan. Namun, hal tersebut akan memicu warning conflicting types karena program tidak menemukan body dari prosedur terkait saat dieksekusi.
+            <p class="description-text">‎ </p>
+            <img src="images/pros4.png" alt="">
+            Penggunaan Prosedur Tanpa Pendeklarasian
+            <p class="description-text">‎ </p>
+            <img src="images/pros5.png" alt="">
+            Muncul Warning pada Compiler akibat dari Penggunaan Prosedur Tanpa Pendeklarasian
+            <p class="description-text">‎ </p>
+            Maka dari itu, diperlukan pendeklarasian prosedur terlebih dahulu agar tidak terjadi masalah seperti pada gambar 5. Contoh pendeklarasian prosedur yang tepat seperti berikut.
+            <p class="description-text">‎ </p>
+            <img src="images/pros6.png" alt="">
+            Contoh Pendeklarasian Prosedur yang Tepat
+            <p class="description-text">‎ </p>
+            <img src="images/pros7.png" alt="">
+            Tidak Muncul Warning pada Compiler Ketika Prosedur Dideklarasikan Terlebih Dahulu
+         </p>
+         
+         <p class="description-text">‎ </p>
+         <h1 class="title">Pendefinisian  Prosedur</h1>
+         <p class="description-text">
+            Pendefinisian biasanya dilakukan di bagian bawah program setelah main program. Seperti pada gambar 6. Pada gambar 6, Prosedur tersebut didefinisikan dengan alur code perulangan untuk menghitung luas dari jajargenjang dengan alas dan tinggi yang didapat dari inputan user.
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Pemanggilan Prosedur</h1>
+         <p class="description-text">
+            Terdapat beberapa syarat untuk dapat memanggil suatu prosedur, yaitu:
+            <img src="" alt="">
+            •	Nama Prosedur yang dipanggil harus sama dengan nama Prosedur yang telah di deklarasikan dan didefinisikan.
+            <img src="" alt="">
+            •	Jumlah Parameternya harus sama dengan prosedur yang dipanggil.
+            <img src="" alt="">
+            •	Tipe data variabel pada parameter yang ada di main program harus sama dan sesuai dengan penempatannya dengan tipe data variabel pada parameter pada saat prosedur dideklarasikan dan didefinisikan.
+            <img src="" alt="">
+            •	Urutan parameter pada saat pendefinisian dan pemanggilan prosedur harus sama. Jika urutan parameter berbeda maka akan memungkinkan terjadinya error pada saat kompilasi atau program menghasilkan output yang tidak sesuai harapan.
+            <img src="" alt="">
+            •	Jika Parameter ditempel asteris / pointer (*) saat pendeklarasian dan pendefinisian, maka saat pemanggilan di parameter tersebut harus ditempel dengan “&”.
+            <img src="" alt="">
+            •	Nama variabel dalam parameter prosedur pada saat pendefinisian dan pemanggilan pada main program tidak harus sama / boleh berbeda.
+            <p class="description-text">‎ </p>
+            <img src="images/pros8.png" alt="">
+            Contoh Pemanggilan Prosedur
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Parameter</h1>
+         <p class="description-text">
+            Parameter merupakan informasi / variabel yang dibutuhkan untuk menjalankan aksi suatu prosedur. Di dalam prosedur, bentuk parameter dapat berupa: 
+            <img src="" alt="">
+            1.	Parameter input: merupakan parameter sebagai masukan ke dalam prosedur untuk menjalankan suatu aksi.
+            <img src="" alt="">
+            2.	Parameter output: merupakan parameter di dalam prosedur yang nilainya nanti akan dibawa keluar ke dalam variabel yang ada di main program (memiliki ciri khas, yaitu terdapat pointer / asteris “*” yang menempel pada parameter).
+            <p class="description-text">‎ </p>
+            <img src="images/pros9.png" alt="">
+            Parameter Input dan Output
+         </p>
+         
+         <p class="description-text">‎ </p>
+         <h1 class="title">Jenis Parameter</h1>
+         <p class="description-text">
+            Parameter pada prosedur dibedakan menjadi 2 jenis, yaitu parameter Formal dan parameter Aktual. Parameter Formal merupakan jenis parameter yang letaknya berada di luar main program. Parameter Aktual merupakan jenis parameter yang ada di dalam main program pada saat pemanggilan dilakukan. Berikut adalah karakteristik dari Parameter Formal dan Parameter Aktual:
+            <img src="" alt="">
+            1. Parameter Formal dan Parameter Aktual tidak harus memiliki nama yang sama.
+            <img src="" alt="">
+            2. Parameter Formal dan Parameter Aktual harus memiliki tipe data yang sama.
+            <img src="" alt="">
+            3. Jumlah Parameter Aktual dan Parameter Formal harus sama.
+            <img src="" alt="">
+            4. Urutan Parameter Formal harus sama dengan Parameter Aktual. 
+            <p class="description-text">‎ </p>
+            <img src="images/pros10.png" alt="">
+            Parameter Aktual dan Formal
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Kategori Prosedur Berdasarkan Parameter</h1>
+         <p class="description-text">
+            1.	Naive: Prosedur yang tidak memiliki parameter
+            <img src="images/pros11.png" alt="">
+            Prosedur Naive
+            <p class="description-text">‎ </p>
+            2.	Semi-Naive Input: Prosedur yang hanya memiliki parameter input dan akan menghasilkan output yang dikeluarkan melalui Standard Input/Output. Pada kategori prosedur ini, code inputan akan berada di main program, sedangkan code output akan berada di dalam prosedur.
+            <img src="images/pros12.png" alt="">
+            Prosedur Semi-Naive Input
+            <p class="description-text">‎ </p>
+            3.	Semi-Naive Output: Prosedur yang hanya memiliki parameter output dan menggunakan input yang didapat melalui Standard Input/Output. Pada kategori prosedur ini, code inputan akan berada di dalam prosedur, sedangkan code output berada di main program.
+            <img src="images/pros13.png" alt="">
+            Prosedur Semi-Naive Output
+            <p class="description-text">‎ </p>
+            4.	Nett Effect: Prosedur yang menggunakan parameter input dan output. Nett Effect tidak memperbolehkan adanya inputan dan output berbentuk printf atau pun scanf di dalam prosedur (Segala jenis code input & output berada di main program).
+            <img src="images/pros14.png" alt="">
+            Prosedur Nett Effect
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Prosedur Rekursif</h1>
+         <p class="description-text">
+            Prosedur Rekrusif adalah Prosedur yang memanggil dirinya sendiri untuk melakukan perulangan tanpa menggunakan konsep “do-while”, “while”, atau pun “nested loop”. Berikut merupakan contohnya.
+            <p class="description-text">‎ </p>
+            <img src="images/pros15.png" alt="">
+            Prosedur Rekrusif
+         </p>
+
+         <p class="description-text">‎ </p>
+         <h1 class="title">Pointer / Asteris (*)</h1>
+         <p class="description-text">
+            Penggunaan asteris/pointer pada parameter formal dalam suatu prosedur akan membuat nilai variabel pada parameter aktual ikut berubah sesuai dengan nilai dari parameter formal. Jika tidak menggunakan asteris/pointer pada parameter formal, perubahan nilai pada parameter formal selama prosedur dieksekusi tidak akan mempengaruhi parameter aktual. Oleh karena itu, untuk mengubah nilai parameter pada prosedur, wajib menggunakan asteris/pointer pada parameter formal yang ingin diubah datanya.
+         </p>
+         
+         </p>
+         <a href="watch-video-8.html" class="btn">Prosedur (Bagian 02)</a>
+      </div>
+   </div>
+   
+</section>
+
+<section class="comments">
+
+   <h1 class="heading">5 Komentar</h1>
+
+   <form action="" class="add-comment">
+      <h3>Tambah Kommentar</h3>
+      <textarea name="comment_box" placeholder="Masukkan komentar" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="Tambah Komentar" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">Komentar Pengguna</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3>Mahasiswa Informatika</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Terimakasih</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="Sunting Komentar" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="Hapus Komentar" name="delete_comment" class="inline-delete-btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Kelvin deodorant</h3>
+               <span>19-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Bagus Banget!!!
+            Keren</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>Verdi Tokyo Mokyo</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">WOW membantu sekali
+            Mudah dipahami juga
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>Alfredo Pangsit</h3>
+               <span>20-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">makasih tutorial nya</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>Kelvin Majapahit</h3>
+               <span>22-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">kesini terus gara gara gapaham materi, hehe</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>Verdi Hime</h3>
+               <span>23-06-2024</span>
+            </div>
+         </div>
+         <div class="comment-box">Gampang dipahami sampe ketagihan baca
+
+            bagaimana kalian bisa seperti ini?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2022 by <span>Hot Malau</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+   
+</body>
+</html>
